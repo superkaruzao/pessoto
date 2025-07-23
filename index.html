@@ -291,6 +291,7 @@
                 color: #fff;
                 font-size: 2.5em;
                 font-weight: 400;
+                margin-bottom: 0;
                 text-align: center;
                 text-transform: uppercase;
             }
@@ -298,7 +299,7 @@
             .equipe .conteudo .items {
                 display: grid;
                 gap: 20px;
-                grid-template-columns: 1fr 1fr;
+                grid-template-columns: 1fr;
             }
             
             .equipe .conteudo .items .texto h3 {
@@ -318,6 +319,9 @@
             
             .equipe .conteudo .items .texto p {
                 color: #fff;
+                margin: 1.5em auto;
+                max-width: 750px;
+                text-align: center;
             }
             
             /* Avaliações */
@@ -462,7 +466,7 @@
             
             footer .conteudo .items {
                 display: grid;
-                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-columns: 1fr 1fr;
             }
             
             footer .conteudo .items .logo img {
@@ -487,6 +491,12 @@
                 display: flex;
                 gap: 10px;
                 text-decoration: none;
+            }
+
+            footer .conteudo .items .item .mapa iframe {
+                border: 0;
+                height: 300px;
+                width: 100%;
             }
             
             /* Copyright */
@@ -566,6 +576,10 @@
                 
                 footer .conteudo .items .item .links {
                     justify-content: center;
+                }
+
+                footer .conteudo .items .item .mapa iframe {
+                    margin-top: 2em;
                 }
                 
             }
@@ -982,9 +996,6 @@
             <div class="wrapper">
                 <div class="conteudo">
                     <div class="items">
-                        <div class="item logo">
-                            <img src="imagens/logo.webp">
-                        </div>
                         <div class="item">
                             <h3>Contato</h3>
                             <div class="links">
@@ -999,6 +1010,10 @@
                                     <i class="bi bi-envelope"></i> 
                                     debora@pessoto.com.br
                                 </a>
+                                <a href="https://instagram.com/pessotoealmeidaadvogados/">
+                                    <i class="bi bi-instagram"></i>
+                                    @pessotoealmeidaadvogados
+                                </a>
                                 <a href="javascript:void(0);">
                                     <i class="bi bi-geo-alt-fill"></i>
                                     Rua Apucarana 272, Sala 711, Tatuapé - São Paulo
@@ -1006,12 +1021,8 @@
                             </div>
                         </div>
                         <div class="item">
-                            <h3>Redes Sociais</h3>
-                            <div class="links">
-                                <a href="https://instagram.com/pessotoealmeidaadvogados/">
-                                    <i class="bi bi-instagram"></i>
-                                    @pessotoealmeidaadvogados
-                                </a>
+                            <div class="mapa">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.7696907047543!2d-46.56763542425426!3d-23.54078456083734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5eed9d46a20f%3A0x1a2b5398c38d1e6c!2sR.%20Apucarana%2C%20272%20-%20Tatuap%C3%A9%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2003311-000!5e0!3m2!1spt-BR!2sbr!4v1753303699387!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                             </div>
                         </div>
                     </div>
