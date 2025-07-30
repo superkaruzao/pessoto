@@ -1,0 +1,1099 @@
+<html>
+    <head>
+        <title>Seguro - Pessoto e Almeida Advogados</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1">
+        
+        <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="imagens/favicon.webp">
+        
+        <!-- Fontes -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+        
+        <!-- Bootstrap Icons -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+        
+        <!-- Swiper JS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+        
+        <!-- Estilos -->
+        <link rel="stylesheet" href="css/estilos.css">
+        
+        <style>
+        
+            /* Geral */
+            
+            :root {
+              --swiper-navigation-size: 20px !important;
+              --swiper-theme-color: #000 !important;
+            }
+            
+            body, html {
+                font-family: "DM Sans", sans-serif;
+            }
+            
+            .botao {
+                display: grid;
+                justify-content: center;
+            }
+            
+            .botao p {
+                text-align: center;
+            }
+            
+            .botao a {
+                background-color: transparent;
+                background-image: linear-gradient(180deg, #3CAB21 0%, #1A4E07 100%);
+                border-radius: 7px;
+                color: #fff;
+                margin: 0 auto;
+                padding: 22px 25px;
+                text-decoration: none;
+                text-transform: uppercase;
+            }
+        
+            /* Principal */
+            
+            .principal {
+                background-color: #000;
+                background-image: url(imagens/b2.webp);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                padding: 6em 1em;
+            }
+            
+            .principal .conteudo {
+                width: 60%;
+            }
+            
+            .principal .conteudo .titulo img {
+                width: 150px;
+            }
+            
+            .principal .conteudo .titulo h3 {
+                color: #fff;
+                font-size: 2.5em;
+                font-weight: 400;
+                text-transform: uppercase;
+            }
+            
+            .principal .conteudo .titulo p {
+                color: #fff;
+                font-size: 1.5em;
+                font-weight: 200;
+            }
+            
+            .principal .conteudo .botao {
+                justify-content: start;
+            }
+            
+            .principal .conteudo .botao p {
+                color: #fff;
+                font-size: 1.5em;
+                font-weight: 300;
+            }
+            
+            .principal .conteudo .botao img {
+                display: block;
+                margin-bottom: 1.5em;
+                width: 150px;
+            }
+            
+            .principal .conteudo .botao a {
+                background-color: transparent;
+                background-image: linear-gradient(180deg, #3CAB21 0%, #1A4E07 100%);
+                border-radius: 7px;
+                color: #fff;
+                display: inline-block;
+                margin: 0;
+                padding: 22px 25px;
+                text-decoration: none;
+                text-transform: uppercase;
+                width: fit-content;
+            }
+            
+            /* Serviços */
+            
+            .servicos {
+                background-color: #fff;
+                padding: 4em 1em;
+            }
+            
+            .servicos .conteudo .titulo h3 {
+                color: #000;
+                font-size: 2.5em;
+                font-weight: 400;
+                margin-bottom: 0;
+                text-align: center;
+                text-transform: uppercase;
+            }
+            
+            .servicos .conteudo .titulo p {
+                margin-bottom: 1.5em;
+                text-align: center;
+            }
+            
+            .servicos .conteudo .items {
+                display: grid;
+                gap: 20px;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+            }
+            
+            .servicos .conteudo .items .item {
+                border: 2px solid #000;
+                border-radius: 15px;
+                padding: 1.5em 1em;
+            }
+            
+            .servicos .conteudo .items .item .icone {
+                display: grid;
+                justify-content: center;
+            }
+            
+            .servicos .conteudo .items .item .icone img {
+                width: 75px;
+            }
+            
+            .servicos .conteudo .items .item .info {
+                text-align: center;
+            }
+            
+            .servicos .conteudo .items .item .info h3 {
+                font-size: 1.5em;
+                font-weight: 500;
+            }
+            
+            /* Porque */
+            
+            .porque {
+                background-color: #000;
+                padding: 4em 1em;
+            }
+            
+            .porque .conteudo .titulo h3 {
+                color: #fff;
+                font-size: 2.5em;
+                font-weight: 400;
+                text-align: center;
+                text-transform: uppercase;
+            }
+            
+            .porque .conteudo .items {
+                display: grid;
+                gap: 20px;
+                grid-template-columns: 1fr 1fr 1fr;
+                margin-bottom: 3em;
+            }
+            
+            .porque .conteudo .items .item {
+                background-color: #fff;
+                border-radius: 15px;
+                display: flex;
+                gap: 15px;
+                padding: 1em;
+            }
+            
+            .porque .conteudo .items .item .icone {
+                background-color: #000;
+                border-radius: 15px;
+                height: fit-content;
+                padding: 10px;
+            }
+            
+            .porque .conteudo .items .item .icone i {
+                color: #fff;
+                font-size: 2em;
+            }
+            
+            .porque .conteudo .items .item .info {
+                color: #000;
+            }
+            
+            .porque .conteudo .items .item .info h3 {
+                align-items: center;
+                border-bottom: 1px solid #000;
+                display: flex;
+                gap: 15px;
+                font-weight: 500;
+                margin-top: 0;
+                padding-bottom: 1em;
+            }
+            
+            .porque .conteudo .botao {
+                display: grid;
+                justify-content: center;
+            }
+            
+            .porque .conteudo .botao a {
+                background-color: transparent;
+                background-image: linear-gradient(180deg, #3CAB21 0%, #1A4E07 100%);
+                border-radius: 7px;
+                color: #fff;
+                padding: 22px 25px;
+                text-decoration: none;
+                text-transform: uppercase;
+            }
+            
+            /* Passo a Passo */
+            
+            .passo {
+                background-color: #fff;
+                padding: 4em 1em;
+            }
+            
+            .passo .conteudo .titulo h3 {
+                color: #000;
+                font-size: 2.5em;
+                font-weight: 400;
+                text-align: center;
+                text-transform: uppercase;
+            }
+            
+            .passo .conteudo .items {
+                display: grid;
+                gap: 20px;
+                grid-template-columns: 1fr 1fr;
+            }
+            
+            .passo .conteudo .items .item {
+                align-items: center;
+                display: flex;
+                gap: 10px;
+                justify-content: center;
+            }
+            
+            .passo .conteudo .items .item .numero span {
+                color: #fff;
+                font-weight: 600;
+                font-size: 20em;
+                text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000, 1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
+            }
+            
+            .passo .conteudo .items .item .texto.mt {
+                margin-top: 2em;
+            }
+            
+            .passo .conteudo .items .item .texto span {
+                border-bottom: 1px solid #000;
+                display: inline-block;
+                font-weight: 600;
+                padding-bottom: 5px;
+                text-transform: uppercase;
+            }
+            
+            /* Equipe */
+            
+            .equipe {
+                background-color: #000;
+                padding: 4em 1em;
+            }
+            
+            .equipe .conteudo .titulo h3 {
+                color: #fff;
+                font-size: 2.5em;
+                font-weight: 400;
+                margin-bottom: 0;
+                text-align: center;
+                text-transform: uppercase;
+            }
+            
+            .equipe .conteudo .items {
+                display: grid;
+                gap: 20px;
+                grid-template-columns: 1fr;
+            }
+            
+            .equipe .conteudo .items .texto h3 {
+                color: #fff;
+                font-size: 2.2em;
+                font-weight: 300;
+                margin-bottom: 0;
+                text-transform: uppercase;
+            }
+            
+            .equipe .conteudo .items .texto span {
+                color: #fff;
+                font-size: 1.5em;
+                font-weight: 300;
+                text-transform: uppercase;
+            }
+            
+            .equipe .conteudo .items .texto p {
+                color: #fff;
+                margin: 1.5em auto;
+                max-width: 750px;
+                text-align: center;
+            }
+            
+            /* Avaliações */
+            
+            .avaliacoes {
+                background-color: #fff;
+                padding: 4em 1em;
+            }
+            
+            .avaliacoes .conteudo .titulo h3 {
+                color: #000;
+                font-size: 2.5em;
+                font-weight: 400;
+                text-align: center;
+                text-transform: uppercase;
+            }
+            
+            .avaliacoes .conteudo .items .swiper {
+                height: fit-content;
+            }
+            
+            .avaliacoes .conteudo .items .swiper .item {
+                background-color: #7373731A;
+                height: 370px;
+                padding: 2em;
+            }
+            
+            .avaliacoes .conteudo .items .swiper .item .titulo {
+                align-items: center;
+                display: flex;
+                justify-content: space-between;
+            }
+            
+            .avaliacoes .conteudo .items .swiper .item .titulo div {
+                display: flex;
+                gap: 10px;
+                margin-bottom: 0.5em;
+            }
+            
+            .avaliacoes .conteudo .items .swiper .item .titulo div h3 {
+                font-size: 1.1em;
+                margin: 0em;
+                text-align: left;
+                text-transform: none;
+            }
+            
+            .avaliacoes .conteudo .items .swiper .item .titulo img {
+                width: 25px;
+            }
+             
+            .avaliacoes .conteudo .items .swiper .item .texto .estrelas i {
+                color: #f6ba04;
+            }
+             
+            .avaliacoes .conteudo .items .swiper .item .texto p {
+                margin-top: 0.5em;
+            }
+            
+            .avaliacoes .conteudo .botao {
+                display: grid;
+                justify-content: center;
+            }
+            
+            .avaliacoes .conteudo .botao p {
+                font-size: 1.5em;
+                text-align: center;
+            }
+            
+            .avaliacoes .conteudo .botao a {
+                background-color: transparent;
+                background-image: linear-gradient(180deg, #3CAB21 0%, #1A4E07 100%);
+                border-radius: 7px;
+                color: #fff;
+                padding: 22px 25px;
+                text-decoration: none;
+                text-transform: uppercase;
+            }
+            
+            /* Perguntas Frequentes */
+            
+            .perguntas {
+                background-color: #000;
+                padding: 4em 1em;
+            }
+            
+            .perguntas .conteudo .titulo h3 {
+                color: #fff;
+                font-size: 2.5em;
+                font-weight: 400;
+                text-align: center;
+                text-transform: uppercase;
+            }
+            
+            .perguntas .conteudo .items {
+                margin: 0 auto;
+                max-width: 800px;
+            }
+            
+            .perguntas .conteudo .items .item {
+                border-bottom: 1px solid #fff;
+                margin-bottom: 1em;
+                padding: 1em 0em;
+            }
+            
+            .perguntas .conteudo .items .item .pergunta {
+                align-items: center;
+                cursor: pointer;
+                display: flex;
+                gap: 20px;
+                justify-content: space-between;
+            }
+            
+            .perguntas .conteudo .items .item .pergunta h3 {
+                color: #fff;
+                font-size: 1.25em;
+                font-weight: 400;
+                margin-bottom: 0;
+            }
+            
+            .perguntas .conteudo .items .item .pergunta i {
+                color: #fff;
+                font-size: 1em;
+            }
+            
+            .perguntas .conteudo .items .item .resposta {
+                display: none;
+                padding-top: 1em;
+            }
+            
+            .perguntas .conteudo .items .item.aberto .resposta {
+                display: block;
+            }
+            
+            .perguntas .conteudo .items .item .resposta p {
+                color: #fff;
+            }
+            
+            .perguntas .conteudo .botao {
+                display: grid;
+                justify-content: center;
+            }
+            
+            /* Rodapé */
+            
+            footer {
+                background-color: #fff;
+                padding: 4em 1em;
+            }
+            
+            footer .conteudo .items {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+            
+            footer .conteudo .items .logo img {
+                width: 150px;
+            }
+            
+            footer .conteudo .items .item h3 {
+                color: #000;
+                font-size: 1.5em;
+                font-weight: 400;
+                text-transform: uppercase;
+            }
+            
+            footer .conteudo .items .item .links {
+                display: grid;
+                gap: 20px;
+            }
+            
+            footer .conteudo .items .item .links a {
+                align-items: center;
+                color: #000;
+                display: flex;
+                gap: 10px;
+                text-decoration: none;
+            }
+
+            footer .conteudo .items .item .mapa iframe {
+                border: 0;
+                height: 300px;
+                width: 100%;
+            }
+            
+            /* Copyright */
+            
+            .copyright {
+                background-color: #000;
+                color: #fff;
+                padding: 2em 1em;
+                text-align: center;
+            }
+            
+            .copyright p {
+                font-weight: 300;
+                margin: 0;
+            }
+            
+            /* Responsivo */
+            
+            @media(max-width: 768px) {
+                
+                .principal {
+                    padding: 4em 1em;
+                }
+                
+                .principal .conteudo {
+                    width: 100%;
+                }
+                
+                .principal .conteudo .titulo img {
+                    display: block;
+                    margin: 0 auto;
+                }
+                
+                .principal .conteudo .titulo h3, .servicos .conteudo .titulo h3, .porque .conteudo .titulo h3, .passo .conteudo .titulo h3, .equipe .conteudo .titulo h3, .avaliacoes .conteudo .titulo h3, .perguntas .conteudo .titulo h3 {
+                    font-size: 2em;
+                    text-align: center;
+                }
+                
+                .principal .conteudo .titulo h3 {
+                    font-size: 1.5em;
+                }
+                
+                .principal .conteudo .titulo p {
+                    font-size: 1em;
+                }
+                
+                .principal .conteudo .botao a {
+                    margin: 0 auto;
+                }
+                
+                .botao a, .principal .conteudo .titulo p, .principal .conteudo .botao p, .principal .conteudo .botao a, .avaliacoes .conteudo .botao a, footer .conteudo .items .item h3 {
+                    text-align: center;
+                }
+                
+                .principal .conteudo .botao {
+                    display: grid;
+                    justify-content: center;
+                }
+                
+                .principal .conteudo .botao img {
+                    margin: 0 auto;
+                    margin-bottom: 1.5em;
+                }
+                
+                .avaliacoes .conteudo .items .swiper .item {
+                    height: 410px;
+                }
+                
+                .servicos .conteudo .items, .porque .conteudo .items, .passo .conteudo .items, .equipe .conteudo .items, footer .conteudo .items {
+                    grid-template-columns: 1fr;
+                }
+                
+                footer .conteudo .items .logo {
+                    display: grid;
+                    justify-content: center;
+                }
+                
+                footer .conteudo .items .item .links {
+                    justify-content: center;
+                }
+
+                footer .conteudo .items .item .mapa iframe {
+                    margin-top: 2em;
+                }
+                
+            }
+            
+        </style>
+        
+    </head>
+    <body>
+        
+        <!-- Principal -->
+        <section class="principal">
+            <div class="wrapper">
+                <div class="conteudo">
+                    <div class="titulo">
+                        <img src="imagens/logo.webp">
+                        <h3>Precisou do seguro e ele negou cobertura? Isso pode ser ILEGAL</h3>
+                        <p>Muitas pessoas enfrentam situações injustas com o seguro. Algumas empresas não cumprem o que foi acordado, causando prejuízos ao segurado. Mas saiba que é possível reverter uma negativa com uma LIMINAR JUDICIAL.
+                           <br><br>
+                           Fale agora com um especialista em negativas de seguro. É possível reverter a situação e garantir sua indenização. Estamos prontos para lutar pelos seus direitos!</p>
+                    </div>
+                    <div class="botao">
+                        <p>Advogado 5 estrelas no Google</p>
+                        <img src="imagens/google.webp">
+                        <a href="https://wa.me/5511982688585">
+                            <i class="bi bi-whatsapp"></i>
+                            Enviar mensagem no Whatsapp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Serviços --->
+        <section class="servicos">
+            <div class="wrapper">
+                <div class="conteudo">
+                    <div class="titulo">
+                        <h3>Nossa Missão</h3>
+                        <p>A defesa dos seus direitos</p>
+                    </div>
+                    <div class="items">
+                        <div class="item">
+                            <div class="icone">
+                                <img src="imagens/icone-terno.svg">
+                            </div>
+                            <div class="info">
+                                <h3>Negativa do seu seguro</h3>
+                                <p>Seu seguro foi negado injustamente? Você pode reverter essa decisão com apoio jurídico especializado.</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="icone">
+                                <img src="imagens/icone-estabilidade.svg">
+                            </div>
+                            <div class="info">
+                                <h3>Reajustes abusivos no plano</h3>
+                                <p>Aumentaram sua mensalidade sem justificativa? Reajustes abusivos podem ser contestados na Justiça.</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="icone">
+                                <img src="imagens/calculadora.svg">
+                            </div>
+                            <div class="info">
+                                <h3>Cobrança indevida de coparticipação</h3>
+                                <p>Cobranças extras e valores ilegais no plano de saúde são práticas irregulares. Exija seus direitos.</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="icone">
+                                <img src="imagens/trabalho.svg">
+                            </div>
+                            <div class="info">
+                                <h3>Negativa por “fraude” sem comprovação</h3>
+                                <p>Foi acusado de fraude sem provas? Isso pode ser ilegal. Você pode recorrer e garantir a cobertura devida.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Porque -->
+        <section class="porque">
+            <div class="wrapper">
+                <div class="conteudo">
+                    <div class="titulo">
+                        <h3>Porquê solicitar nossos serviços</h3>
+                    </div>
+                    <div class="items">
+                        <div class="item">
+                            <div class="info">
+                                <h3>
+                                    <div class="icone">
+                                        <i class="bi bi-check2-square"></i>
+                                    </div>
+                                    Comunicação Clara e Acessível
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="info">
+                                <h3>
+                                    <div class="icone">
+                                        <i class="bi bi-person-up"></i>
+                                    </div>
+                                    Atendimento Humanizado e Suporte Contínuo
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="info">
+                                <h3>
+                                    <div class="icone">
+                                        <i class="bi bi-graph-up-arrow"></i>
+                                    </div>
+                                    Especialização em Direito do Trabalho
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="info">
+                                <h3>
+                                    <div class="icone">
+                                        <i class="bi bi-graph-up-arrow"></i>
+                                    </div>
+                                    Acompanhamento individualizado
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="info">
+                                <h3>
+                                    <div class="icone">
+                                        <i class="bi bi-graph-up-arrow"></i>
+                                    </div>
+                                    Transparência em cada etapa
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="info">
+                                <h3>
+                                    <div class="icone">
+                                        <i class="bi bi-graph-up-arrow"></i>
+                                    </div>
+                                    Consultoria preventiva para empresas
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="botao">
+                        <a href="https://wa.me/5511982688585">
+                            <i class="bi bi-whatsapp"></i>
+                            Enviar mensagem no Whatsapp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Passo a Passo -->
+        <section class="passo">
+            <div class="wrapper">
+                <div class="conteudo">
+                    <div class="titulo">
+                        <h3>O que fazemos quando a seguradora negou seu pedido</h3>
+                    </div>
+                    <div class="items">
+                        <div class="item">
+                            <div class="numero">
+                                <span>1</span>
+                            </div>
+                            <div class="texto">
+                                <span>passo</span>
+                                <h3>Análise do contrato e da apólice</h3>
+                                <p>Verificamos todos os detalhes do seu contrato e da apólice para entender seus direitos e identificar possíveis irregularidades.</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="numero">
+                                <span>2</span>
+                            </div>
+                            <div class="texto">
+                                <span>passo</span>
+                                <h3>Revisão dos motivos da negativa</h3>
+                                <p>Avaliamos os argumentos usados pela seguradora para negar o pagamento e identificamos se há base legal para contestar.</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="numero">
+                                <span>3</span>
+                            </div>
+                            <div class="texto mt">
+                                <span>passo</span>
+                                <h3>Intermediação com a seguradora</h3>
+                                <p>Entramos em contato direto com a empresa para buscar uma solução amigável, evitando o processo judicial sempre que possível.</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="numero">
+                                <span>4</span>
+                            </div>
+                            <div class="texto mt">
+                                <span>passo</span>
+                                <h3>Ação judicial, se necessário</h3>
+                                <p>Caso a seguradora não cumpra com suas obrigações, ingressamos com ação judicial e, se aplicável, pedimos liminar para garantir seu direito rapidamente.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Equipe -->
+        <div class="equipe">
+            <div class="wrapper">
+                <div class="conteudo">
+                    <div class="titulo">
+                        <h3>Quem Somos</h3>
+                    </div>
+                    <div class="items">
+                        <div class="texto">
+                            <p>Atuamos com foco total em cada cliente, oferecendo um atendimento estratégico e personalizado. Entendemos que uma negativa de seguro pode gerar impacto direto na sua vida, por isso, buscamos soluções rápidas e eficazes para garantir seus direitos.
+                               <br><br>
+                               Com uma trajetória reconhecida e inúmeros casos de sucesso, já ajudamos milhares de pessoas a reverterem negativas injustas.
+                               <br><br>
+                               Se o seu seguro negou algo que é seu por direito, você não está sozinho. Nossa equipe está pronta para te apoiar do início ao fim!</p>
+                            <div class="botao">
+                                <a href="https://wa.me/5511982688585">
+                                    <i class="bi bi-whatsapp"></i>
+                                    Enviar mensagem no Whatsapp
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Avaliações -->
+        <div class="avaliacoes">
+            <div class="wrapper">
+                <div class="conteudo">
+                    <div class="titulo">
+                        <h3>Depoimentos de Clientes</h3>
+                    </div>
+                    <div class="items">
+                        <div class="swiper">
+                          <!-- Additional required wrapper -->
+                          <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <div class="item">
+                                    <div class="titulo">
+                                        <div>
+                                            <img src="imagens/Ana-Paula-M.webp">
+                                            <h3>Ana Paula M. – Campinas, SP</h3>
+                                        </div>
+                                        <img src="imagens/icone-google.svg">
+                                    </div>
+                                    <div class="texto">
+                                        <div class="estrelas">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                        </div>
+                                        <p>"A seguradora simplesmente negou meu seguro sem explicação. Eu já tava sem esperança, mas essa equipe me tratou super bem e correu atrás de tudo. No final, deu tudo certo e recebi o valor que era meu por direito."</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="item">
+                                    <div class="titulo">
+                                        <div>
+                                            <img src="imagens/Joao-V.webp">
+                                            <h3>João Vitor R. – Recife, PE</h3>
+                                        </div>
+                                        <img src="imagens/icone-google.svg">
+                                    </div>
+                                    <div class="texto">
+                                        <div class="estrelas">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                        </div>
+                                        <p>“Do nada, o plano subiu mais de R$300 na mensalidade. Fiquei revoltado. A galera do escritório foi ponta firme, entraram com a ação e conseguiram baixar o valor. Me ajudaram quando eu mais precisei."</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="item">
+                                    <div class="titulo">
+                                        <div>
+                                            <img src="imagens/Renata-L.webp">
+                                            <h3>Renata L. – Curitiba, PR</h3>
+                                        </div>
+                                        <img src="imagens/icone-google.svg">
+                                    </div>
+                                    <div class="texto">
+                                        <div class="estrelas">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                        </div>
+                                        <p>"Estavam me cobrando uns valores muito nada a ver no plano. Falei com o pessoal e, em poucas semanas, eles resolveram. Ainda recebi um reembolso que eu nem sabia que podia ter. Atendimento top!"</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="item">
+                                    <div class="titulo">
+                                        <div>
+                                            <img src="imagens/Carlos-Eduardo.webp">
+                                            <h3>Carlos F. – Goiânia, GO</h3>
+                                        </div>
+                                        <img src="imagens/icone-google.svg">
+                                    </div>
+                                    <div class="texto">
+                                        <div class="estrelas">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                        </div>
+                                        <p>"Fui acusado de fraude sem nenhuma prova. Me senti totalmente injustiçado. O escritório não só me ouviu com atenção, como entrou com tudo pra reverter. Deu certo! Foi um alívio saber que alguém tava do meu lado."</p>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                          <!-- If we need pagination -->
+                          <!--<div class="swiper-pagination"></div>-->
+                        
+                          <!-- If we need navigation buttons -->
+                          <div class="swiper-button-prev"></div>
+                          <div class="swiper-button-next"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Perguntas Frequentes -->
+        <div class="perguntas">
+            <div class="wrapper">
+                <div class="conteudo">
+                    <div class="titulo">
+                        <h3>Perguntas Frequentes</h3>
+                    </div>
+                    <div class="items">
+                        <div class="item">
+                            <div class="pergunta">
+                                <h3>O que fazer se meu seguro for negado?</h3>
+                                <i class="bi bi-plus-lg"></i>
+                            </div>
+                            <div class="resposta">
+                                <p>Solicite à empresa do seu seguro uma explicação detalhada por escrito sobre o motivo da negativa e consulte um advogado para verificar a possibilidade de contestação.</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="pergunta">
+                                <h3>Quais são os motivos comuns para a negativa de um seguro?</h3>
+                                <i class="bi bi-plus-lg"></i>
+                            </div>
+                            <div class="resposta">
+                                <p>Negativas podem ocorrer por diversos motivos, como alegações de uso indevido, falta de documentos, supostas irregularidades no contrato, ou situações que a seguradora entende como fora da cobertura prevista na apólice. Cada caso deve ser analisado com atenção, pois muitas dessas negativas podem ser injustas ou abusivas.</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="pergunta">
+                                <h3>Como posso contestar a negativa de um seguro?</h3>
+                                <i class="bi bi-plus-lg"></i>
+                            </div>
+                            <div class="resposta">
+                                <p>Reúna documentos e provas que sustentem seu direito à cobertura e envie um recurso formal à seguradora. Caso a resposta ainda seja negativa, procure apoio jurídico. É possível reverter a decisão com base na lei.</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="pergunta">
+                                <h3>Posso contratar um novo seguro mesmo após uma negativa anterior?</h3>
+                                <i class="bi bi-plus-lg"></i>
+                            </div>
+                            <div class="resposta">
+                                <p>Sim, é possível contratar um novo seguro mesmo após ter um pedido negado. No entanto, é fundamental informar a nova seguradora sobre a negativa anterior e os motivos, pois isso pode influenciar na análise do risco e nas condições da nova apólice.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Rodapé -->
+        <footer>
+            <div class="wrapper">
+                <div class="conteudo">
+                    <div class="items">
+                        <div class="item">
+                            <h3>Contato</h3>
+                            <div class="links">
+                                <a href="javascript:void(0);">
+                                    <i class="bi bi-clock"></i>
+                                    09:00 às 18:00
+                                </a>
+                                <a href="https://wa.me/5511982688585">
+                                    <i class="bi bi-whatsapp"></i> (11) 98268-8585
+                                </a>
+                                <a href="mailto:debora@pessoto.com.br">
+                                    <i class="bi bi-envelope"></i> 
+                                    debora@pessoto.com.br
+                                </a>
+                                <a href="https://instagram.com/pessotoealmeidaadvogados/">
+                                    <i class="bi bi-instagram"></i>
+                                    @pessotoealmeidaadvogados
+                                </a>
+                                <a href="javascript:void(0);">
+                                    <i class="bi bi-geo-alt-fill"></i>
+                                    Rua Apucarana 272, Sala 711, Tatuapé - São Paulo
+                                </a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="mapa">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.7696907047543!2d-46.56763542425426!3d-23.54078456083734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5eed9d46a20f%3A0x1a2b5398c38d1e6c!2sR.%20Apucarana%2C%20272%20-%20Tatuap%C3%A9%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2003311-000!5e0!3m2!1spt-BR!2sbr!4v1753303699387!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+        <!-- Copyright -->
+        <section class="copyright">
+            <p>Copyrigth Pessoto e Almeida Advogados – 2025 © Todos os direitos reservados.</p>
+        </section>
+        
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        
+        <!-- Scripts -->
+        <script>
+            
+            const swiper = new Swiper('.swiper', {
+              // Optional parameters
+              direction: 'horizontal',
+              loop: true,
+              autoplay: {
+                delay: 5000,
+              },
+              breakpoints: {
+                  1: {
+                    slidesPerView: 1,
+                    spaceBetween: 20, 
+                  },
+                  768: {
+                    slidesPerView: 3,
+                    spaceBetween: 20, 
+                  }
+              },
+              // If we need pagination
+              pagination: {
+                el: '.swiper-pagination',
+              },
+            
+              // Navigation arrows
+              navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+              },
+            });
+            
+            // Perguntas
+            $(".pergunta").click(function() {
+                
+                // Se está fechado
+                if(!$(this).parent().hasClass("aberto")) {
+                    
+                    $(this).parent().addClass("aberto");
+                    $(this).children("i").removeClass("bi-plus-lg");
+                    $(this).children("i").addClass("bi-dash-lg");
+                    
+                }
+                
+                else if($(this).parent().hasClass("aberto")) {
+                    
+                    $(this).parent().removeClass("aberto");
+                    $(this).children("i").removeClass("bi-dash-lg");
+                    $(this).children("i").addClass("bi-plus-lg");
+                    
+                }
+                
+            });
+            
+        </script>
+        
+    </body>
+</html>
