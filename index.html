@@ -1,880 +1,937 @@
 <html>
-    <head>
-        <title>Conflitos Trabalhistas - Pessoto e Almeida Advogados</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="initial-scale=1">
-        
-        <!-- Favicon -->
-        <link rel="icon" type="image/x-icon" href="imagens/favicon.webp">
-        
-        <!-- Fontes -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
-        
-        <!-- Bootstrap Icons -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-        
-        <!-- Swiper JS -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-        
-        <!-- Estilos -->
-        <link rel="stylesheet" href="css/estilos.css">
-        
-        <style>
-        
-            /* Geral */
-            
-            :root {
-              --swiper-navigation-size: 20px !important;
-              --swiper-theme-color: #000 !important;
-            }
-            
-            body, html {
-                font-family: "DM Sans", sans-serif;
-            }
-            
-            .botao {
-                display: grid;
-                justify-content: center;
-            }
-            
-            .botao p {
-                text-align: center;
-            }
-            
-            .botao a {
-                background-color: transparent;
-                background-image: linear-gradient(180deg, #3CAB21 0%, #1A4E07 100%);
-                border-radius: 7px;
-                color: #fff;
-                margin: 0 auto;
-                padding: 22px 25px;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-        
-            /* Principal */
-            
+
+<head>
+    <title>Conflitos Trabalhistas - Pessoto e Almeida Advogados</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="imagens/favicon.webp">
+
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Swiper JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <style>
+        /* Geral */
+
+        :root {
+            --swiper-navigation-size: 20px !important;
+            --swiper-theme-color: #000 !important;
+        }
+
+        body,
+        html {
+            font-family: "DM Sans", sans-serif;
+        }
+
+        .botao {
+            display: grid;
+            justify-content: center;
+        }
+
+        .botao p {
+            text-align: center;
+        }
+
+        .botao a {
+            background-color: transparent;
+            background-image: linear-gradient(180deg, #3CAB21 0%, #1A4E07 100%);
+            border-radius: 7px;
+            color: #fff;
+            margin: 0 auto;
+            padding: 22px 25px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        /* Principal */
+
+        .principal {
+            background-color: #000;
+            background-image: url(imagens/pessoto.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100% 900px;
+            padding: 6em 1em;
+        }
+
+        .principal .conteudo {
+            width: 60%;
+        }
+
+        .principal .conteudo .titulo img {
+            width: 150px;
+        }
+
+        .principal .conteudo .titulo h3 {
+            color: #fff;
+            font-size: 2.5em;
+            font-weight: 400;
+            text-transform: uppercase;
+        }
+
+        .principal .conteudo .titulo p {
+            color: #fff;
+            font-size: 1.5em;
+            font-weight: 200;
+        }
+
+        .principal .conteudo .botao {
+            justify-content: start;
+        }
+
+        .principal .conteudo .botao p {
+            color: #fff;
+            font-size: 1.5em;
+            font-weight: 300;
+        }
+
+        .principal .conteudo .botao img {
+            display: block;
+            margin-bottom: 1.5em;
+            width: 150px;
+        }
+
+        .principal .conteudo .botao a {
+            background-color: transparent;
+            background-image: linear-gradient(180deg, #3CAB21 0%, #1A4E07 100%);
+            border-radius: 7px;
+            color: #fff;
+            display: inline-block;
+            margin: 0;
+            padding: 22px 25px;
+            text-decoration: none;
+            text-transform: uppercase;
+            width: fit-content;
+        }
+
+        /* Serviços */
+
+        .servicos {
+            background-color: #fff;
+            padding: 4em 1em;
+        }
+
+        .servicos .conteudo .titulo h3 {
+            color: #000;
+            font-size: 2.5em;
+            font-weight: 400;
+            margin-bottom: 0;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .servicos .conteudo .titulo p {
+            margin-bottom: 1.5em;
+            text-align: center;
+        }
+
+        .servicos .conteudo .items {
+            display: grid;
+            gap: 20px;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        .servicos .conteudo .items .item {
+            border: 2px solid #000;
+            border-radius: 15px;
+            padding: 1.5em 1em;
+        }
+
+        .servicos .conteudo .items .item .icone {
+            display: grid;
+            justify-content: center;
+        }
+
+        .servicos .conteudo .items .item .icone img {
+            width: 75px;
+        }
+
+        .servicos .conteudo .items .item .info {
+            text-align: center;
+        }
+
+        .servicos .conteudo .items .item .info h3 {
+            font-size: 1.5em;
+            font-weight: 500;
+        }
+
+        /* Porque */
+
+        .porque {
+            background-color: #000;
+            padding: 4em 1em;
+        }
+
+        .porque .conteudo .titulo h3 {
+            color: #fff;
+            font-size: 2.5em;
+            font-weight: 400;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .porque .conteudo .items {
+            display: grid;
+            gap: 20px;
+            grid-template-columns: 1fr 1fr 1fr;
+            margin-bottom: 3em;
+        }
+
+        .porque .conteudo .items .item {
+            background-color: #fff;
+            border-radius: 15px;
+            display: flex;
+            gap: 15px;
+            padding: 1em;
+        }
+
+        .porque .conteudo .items .item .icone {
+            background-color: #000;
+            border-radius: 15px;
+            height: fit-content;
+            padding: 10px;
+        }
+
+        .porque .conteudo .items .item .icone i {
+            color: #fff;
+            font-size: 2em;
+        }
+
+        .porque .conteudo .items .item .info {
+            color: #000;
+        }
+
+        .porque .conteudo .items .item .info h3 {
+            align-items: center;
+            border-bottom: 1px solid #000;
+            display: flex;
+            gap: 15px;
+            font-weight: 500;
+            margin-top: 0;
+            padding-bottom: 1em;
+        }
+
+        .porque .conteudo .botao {
+            display: grid;
+            justify-content: center;
+        }
+
+        .porque .conteudo .botao a {
+            background-color: transparent;
+            background-image: linear-gradient(180deg, #3CAB21 0%, #1A4E07 100%);
+            border-radius: 7px;
+            color: #fff;
+            padding: 22px 25px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        /* Passo a Passo */
+
+        .passo {
+            background-color: #fff;
+            padding: 4em 1em;
+        }
+
+        .passo .conteudo .titulo h3 {
+            color: #000;
+            font-size: 2.5em;
+            font-weight: 400;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .passo .conteudo .items {
+            display: grid;
+            gap: 20px;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        .passo .conteudo .items .item {
+            align-items: center;
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .passo .conteudo .items .item .numero span {
+            color: #fff;
+            font-weight: 600;
+            font-size: 20em;
+            text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000, 1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
+        }
+
+        .passo .conteudo .items .item .texto.mt {
+            margin-top: 2em;
+        }
+
+        .passo .conteudo .items .item .texto span {
+            border-bottom: 1px solid #000;
+            display: inline-block;
+            font-weight: 600;
+            padding-bottom: 5px;
+            text-transform: uppercase;
+        }
+
+        /* Equipe */
+
+        .equipe {
+            background-color: #000;
+            padding: 4em 1em;
+        }
+
+        .equipe .conteudo .titulo h3 {
+            color: #fff;
+            font-size: 2.5em;
+            font-weight: 400;
+            margin-bottom: 0;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .equipe .conteudo .items {
+            display: grid;
+            gap: 20px;
+            grid-template-columns: 1fr;
+        }
+
+        .equipe .conteudo .items .texto h3 {
+            color: #fff;
+            font-size: 2.2em;
+            font-weight: 300;
+            margin-bottom: 0;
+            text-transform: uppercase;
+        }
+
+        .equipe .conteudo .items .texto span {
+            color: #fff;
+            font-size: 1.5em;
+            font-weight: 300;
+            text-transform: uppercase;
+        }
+
+        .equipe .conteudo .items .texto p {
+            color: #fff;
+            margin: 1.5em auto;
+            max-width: 750px;
+            text-align: center;
+        }
+
+        /* Avaliações */
+
+        .avaliacoes {
+            background-color: #fff;
+            padding: 4em 1em;
+        }
+
+        .avaliacoes .conteudo .titulo h3 {
+            color: #000;
+            font-size: 2.5em;
+            font-weight: 400;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .avaliacoes .conteudo .items .swiper {
+            height: fit-content;
+        }
+
+        .avaliacoes .conteudo .items .swiper .item {
+            background-color: #7373731A;
+            height: 370px;
+            padding: 2em;
+        }
+
+        .avaliacoes .conteudo .items .swiper .item .titulo {
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .avaliacoes .conteudo .items .swiper .item .titulo h3 {
+            font-size: 1.2em;
+            margin-bottom: 0.5em;
+            text-transform: none;
+        }
+
+        .avaliacoes .conteudo .items .swiper .item .titulo img {
+            width: 25px;
+        }
+
+        .avaliacoes .conteudo .items .swiper .item .texto .estrelas i {
+            color: #f6ba04;
+        }
+
+        .avaliacoes .conteudo .items .swiper .item .texto p {
+            margin-top: 0.5em;
+        }
+
+        .avaliacoes .conteudo .botao {
+            display: grid;
+            justify-content: center;
+        }
+
+        .avaliacoes .conteudo .botao p {
+            font-size: 1.5em;
+            text-align: center;
+        }
+
+        .avaliacoes .conteudo .botao a {
+            background-color: transparent;
+            background-image: linear-gradient(180deg, #3CAB21 0%, #1A4E07 100%);
+            border-radius: 7px;
+            color: #fff;
+            padding: 22px 25px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        /* Perguntas Frequentes */
+
+        .perguntas {
+            background-color: #000;
+            padding: 4em 1em;
+        }
+
+        .perguntas .conteudo .titulo h3 {
+            color: #fff;
+            font-size: 2.5em;
+            font-weight: 400;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .perguntas .conteudo .items {
+            margin: 0 auto;
+            max-width: 800px;
+        }
+
+        .perguntas .conteudo .items .item {
+            border-bottom: 1px solid #fff;
+            margin-bottom: 1em;
+            padding: 1em 0em;
+        }
+
+        .perguntas .conteudo .items .item .pergunta {
+            align-items: center;
+            cursor: pointer;
+            display: flex;
+            gap: 20px;
+            justify-content: space-between;
+        }
+
+        .perguntas .conteudo .items .item .pergunta h3 {
+            color: #fff;
+            font-size: 1.25em;
+            font-weight: 400;
+            margin-bottom: 0;
+        }
+
+        .perguntas .conteudo .items .item .pergunta i {
+            color: #fff;
+            font-size: 1em;
+        }
+
+        .perguntas .conteudo .items .item .resposta {
+            display: none;
+            padding-top: 1em;
+        }
+
+        .perguntas .conteudo .items .item.aberto .resposta {
+            display: block;
+        }
+
+        .perguntas .conteudo .items .item .resposta p {
+            color: #fff;
+        }
+
+        .perguntas .conteudo .botao {
+            display: grid;
+            justify-content: center;
+        }
+
+        /* Rodapé */
+
+        footer {
+            background-color: #fff;
+            padding: 4em 1em;
+        }
+
+        footer .conteudo .items {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        footer .conteudo .items .logo img {
+            width: 150px;
+        }
+
+        footer .conteudo .items .item h3 {
+            color: #000;
+            font-size: 1.5em;
+            font-weight: 400;
+            text-transform: uppercase;
+        }
+
+        footer .conteudo .items .item .links {
+            display: grid;
+            gap: 20px;
+        }
+
+        footer .conteudo .items .item .links a {
+            align-items: center;
+            color: #000;
+            display: flex;
+            gap: 10px;
+            text-decoration: none;
+        }
+
+        footer .conteudo .items .item .mapa iframe {
+            border: 0;
+            height: 300px;
+            width: 100%;
+        }
+
+        /* Copyright */
+
+        .copyright {
+            background-color: #000;
+            color: #fff;
+            padding: 2em 1em;
+            text-align: center;
+        }
+
+        .copyright p {
+            font-weight: 300;
+            margin: 0;
+        }
+
+        /* Responsivo */
+
+        @media(max-width: 768px) {
+
             .principal {
-                background-color: #000;
-                background-image: url(imagens/b2.webp);
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
-                padding: 6em 1em;
+                padding: 4em 1em;
+                background-size: 600px 790px;
             }
-            
+
             .principal .conteudo {
-                width: 60%;
+                width: 100%;
             }
-            
+
             .principal .conteudo .titulo img {
-                width: 150px;
-            }
-            
-            .principal .conteudo .titulo h3 {
-                color: #fff;
-                font-size: 2.5em;
-                font-weight: 400;
-                text-transform: uppercase;
-            }
-            
-            .principal .conteudo .titulo p {
-                color: #fff;
-                font-size: 1.5em;
-                font-weight: 200;
-            }
-            
-            .principal .conteudo .botao {
-                justify-content: start;
-            }
-            
-            .principal .conteudo .botao p {
-                color: #fff;
-                font-size: 1.5em;
-                font-weight: 300;
-            }
-            
-            .principal .conteudo .botao img {
                 display: block;
-                margin-bottom: 1.5em;
-                width: 150px;
+                margin: 0 auto;
             }
-            
-            .principal .conteudo .botao a {
-                background-color: transparent;
-                background-image: linear-gradient(180deg, #3CAB21 0%, #1A4E07 100%);
-                border-radius: 7px;
-                color: #fff;
-                display: inline-block;
-                margin: 0;
-                padding: 22px 25px;
-                text-decoration: none;
-                text-transform: uppercase;
-                width: fit-content;
-            }
-            
-            /* Serviços */
-            
-            .servicos {
-                background-color: #fff;
-                padding: 4em 1em;
-            }
-            
-            .servicos .conteudo .titulo h3 {
-                color: #000;
-                font-size: 2.5em;
-                font-weight: 400;
-                margin-bottom: 0;
-                text-align: center;
-                text-transform: uppercase;
-            }
-            
-            .servicos .conteudo .titulo p {
-                margin-bottom: 1.5em;
-                text-align: center;
-            }
-            
-            .servicos .conteudo .items {
-                display: grid;
-                gap: 20px;
-                grid-template-columns: 1fr 1fr 1fr;
-            }
-            
-            .servicos .conteudo .items .item {
-                border: 2px solid #000;
-                border-radius: 15px;
-                padding: 1.5em 1em;
-            }
-            
-            .servicos .conteudo .items .item .icone {
-                display: grid;
-                justify-content: center;
-            }
-            
-            .servicos .conteudo .items .item .icone img {
-                width: 75px;
-            }
-            
-            .servicos .conteudo .items .item .info {
-                text-align: center;
-            }
-            
-            .servicos .conteudo .items .item .info h3 {
-                font-size: 1.5em;
-                font-weight: 500;
-            }
-            
-            /* Porque */
-            
-            .porque {
-                background-color: #000;
-                padding: 4em 1em;
-            }
-            
-            .porque .conteudo .titulo h3 {
-                color: #fff;
-                font-size: 2.5em;
-                font-weight: 400;
-                text-align: center;
-                text-transform: uppercase;
-            }
-            
-            .porque .conteudo .items {
-                display: grid;
-                gap: 20px;
-                grid-template-columns: 1fr 1fr 1fr;
-                margin-bottom: 3em;
-            }
-            
-            .porque .conteudo .items .item {
-                background-color: #fff;
-                border-radius: 15px;
-                display: flex;
-                gap: 15px;
-                padding: 1em;
-            }
-            
-            .porque .conteudo .items .item .icone {
-                background-color: #000;
-                border-radius: 15px;
-                height: fit-content;
-                padding: 10px;
-            }
-            
-            .porque .conteudo .items .item .icone i {
-                color: #fff;
+
+            .principal .conteudo .titulo h3,
+            .servicos .conteudo .titulo h3,
+            .porque .conteudo .titulo h3,
+            .passo .conteudo .titulo h3,
+            .equipe .conteudo .titulo h3,
+            .avaliacoes .conteudo .titulo h3,
+            .perguntas .conteudo .titulo h3 {
                 font-size: 2em;
+                text-align: center;
             }
-            
-            .porque .conteudo .items .item .info {
-                color: #000;
+
+            .principal .conteudo .titulo h3 {
+                font-size: 1.8em;
             }
-            
-            .porque .conteudo .items .item .info h3 {
-                align-items: center;
-                border-bottom: 1px solid #000;
-                display: flex;
-                gap: 15px;
-                font-weight: 500;
-                margin-top: 0;
-                padding-bottom: 1em;
+
+            .principal .conteudo .titulo p {
+                font-size: 1.2em;
             }
-            
-            .porque .conteudo .botao {
+
+            .principal .conteudo .botao a {
+                margin: 0 auto;
+            }
+
+            .botao a,
+            .principal .conteudo .titulo p,
+            .principal .conteudo .botao p,
+            .principal .conteudo .botao a,
+            .avaliacoes .conteudo .botao a,
+            footer .conteudo .items .item h3 {
+                text-align: center;
+            }
+
+            .principal .conteudo .botao {
                 display: grid;
                 justify-content: center;
             }
-            
-            .porque .conteudo .botao a {
-                background-color: transparent;
-                background-image: linear-gradient(180deg, #3CAB21 0%, #1A4E07 100%);
-                border-radius: 7px;
-                color: #fff;
-                padding: 22px 25px;
-                text-decoration: none;
-                text-transform: uppercase;
+
+            .principal .conteudo .botao img {
+                margin: 0 auto;
+                margin-bottom: 1.5em;
             }
-            
-            /* Passo a Passo */
-            
-            .passo {
-                background-color: #fff;
-                padding: 4em 1em;
+
+            .avaliacoes .conteudo .items .swiper .item {
+                height: 410px;
             }
-            
-            .passo .conteudo .titulo h3 {
-                color: #000;
-                font-size: 2.5em;
-                font-weight: 400;
-                text-align: center;
-                text-transform: uppercase;
-            }
-            
-            .passo .conteudo .items {
-                display: grid;
-                gap: 20px;
-                grid-template-columns: 1fr 1fr 1fr;
-            }
-            
-            .passo .conteudo .items .item {
-                align-items: center;
-                display: flex;
-                gap: 10px;
-                justify-content: center;
-            }
-            
-            .passo .conteudo .items .item .numero span {
-                color: #fff;
-                font-weight: 600;
-                font-size: 20em;
-                text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000, 1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000;
-            }
-            
-            .passo .conteudo .items .item .texto.mt {
-                margin-top: 2em;
-            }
-            
-            .passo .conteudo .items .item .texto span {
-                border-bottom: 1px solid #000;
-                display: inline-block;
-                font-weight: 600;
-                padding-bottom: 5px;
-                text-transform: uppercase;
-            }
-            
-            /* Equipe */
-            
-            .equipe {
-                background-color: #000;
-                padding: 4em 1em;
-            }
-            
-            .equipe .conteudo .titulo h3 {
-                color: #fff;
-                font-size: 2.5em;
-                font-weight: 400;
-                margin-bottom: 0;
-                text-align: center;
-                text-transform: uppercase;
-            }
-            
-            .equipe .conteudo .items {
-                display: grid;
-                gap: 20px;
+
+            .servicos .conteudo .items,
+            .porque .conteudo .items,
+            .passo .conteudo .items,
+            .equipe .conteudo .items,
+            footer .conteudo .items {
                 grid-template-columns: 1fr;
             }
-            
-            .equipe .conteudo .items .texto h3 {
-                color: #fff;
-                font-size: 2.2em;
-                font-weight: 300;
-                margin-bottom: 0;
-                text-transform: uppercase;
-            }
-            
-            .equipe .conteudo .items .texto span {
-                color: #fff;
-                font-size: 1.5em;
-                font-weight: 300;
-                text-transform: uppercase;
-            }
-            
-            .equipe .conteudo .items .texto p {
-                color: #fff;
-                margin: 1.5em auto;
-                max-width: 750px;
-                text-align: center;
-            }
-            
-            /* Avaliações */
-            
-            .avaliacoes {
-                background-color: #fff;
-                padding: 4em 1em;
-            }
-            
-            .avaliacoes .conteudo .titulo h3 {
-                color: #000;
-                font-size: 2.5em;
-                font-weight: 400;
-                text-align: center;
-                text-transform: uppercase;
-            }
-            
-            .avaliacoes .conteudo .items .swiper {
-                height: fit-content;
-            }
-            
-            .avaliacoes .conteudo .items .swiper .item {
-                background-color: #7373731A;
-                height: 370px;
-                padding: 2em;
-            }
-            
-            .avaliacoes .conteudo .items .swiper .item .titulo {
-                align-items: center;
-                display: flex;
-                justify-content: space-between;
-            }
-            
-            .avaliacoes .conteudo .items .swiper .item .titulo h3 {
+
+            .servicos .wrapper .conteudo .titulo p {
                 font-size: 1.2em;
-                margin-bottom: 0.5em;
-                text-transform: none;
             }
-            
-            .avaliacoes .conteudo .items .swiper .item .titulo img {
-                width: 25px;
+
+            .info h3 {
+                font-size: 1.7em
             }
-             
-            .avaliacoes .conteudo .items .swiper .item .texto .estrelas i {
-                color: #f6ba04;
+
+            .info p {
+                font-size: 1.2em;
             }
-             
-            .avaliacoes .conteudo .items .swiper .item .texto p {
-                margin-top: 0.5em;
-            }
-            
-            .avaliacoes .conteudo .botao {
+
+            footer .conteudo .items .logo {
                 display: grid;
                 justify-content: center;
             }
-            
-            .avaliacoes .conteudo .botao p {
-                font-size: 1.5em;
-                text-align: center;
-            }
-            
-            .avaliacoes .conteudo .botao a {
-                background-color: transparent;
-                background-image: linear-gradient(180deg, #3CAB21 0%, #1A4E07 100%);
-                border-radius: 7px;
-                color: #fff;
-                padding: 22px 25px;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-            
-            /* Perguntas Frequentes */
-            
-            .perguntas {
-                background-color: #000;
-                padding: 4em 1em;
-            }
-            
-            .perguntas .conteudo .titulo h3 {
-                color: #fff;
-                font-size: 2.5em;
-                font-weight: 400;
-                text-align: center;
-                text-transform: uppercase;
-            }
-            
-            .perguntas .conteudo .items {
-                margin: 0 auto;
-                max-width: 800px;
-            }
-            
-            .perguntas .conteudo .items .item {
-                border-bottom: 1px solid #fff;
-                margin-bottom: 1em;
-                padding: 1em 0em;
-            }
-            
-            .perguntas .conteudo .items .item .pergunta {
-                align-items: center;
-                cursor: pointer;
-                display: flex;
-                gap: 20px;
-                justify-content: space-between;
-            }
-            
-            .perguntas .conteudo .items .item .pergunta h3 {
-                color: #fff;
-                font-size: 1.25em;
-                font-weight: 400;
-                margin-bottom: 0;
-            }
-            
-            .perguntas .conteudo .items .item .pergunta i {
-                color: #fff;
-                font-size: 1em;
-            }
-            
-            .perguntas .conteudo .items .item .resposta {
-                display: none;
-                padding-top: 1em;
-            }
-            
-            .perguntas .conteudo .items .item.aberto .resposta {
-                display: block;
-            }
-            
-            .perguntas .conteudo .items .item .resposta p {
-                color: #fff;
-            }
-            
-            .perguntas .conteudo .botao {
-                display: grid;
-                justify-content: center;
-            }
-            
-            /* Rodapé */
-            
-            footer {
-                background-color: #fff;
-                padding: 4em 1em;
-            }
-            
-            footer .conteudo .items {
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-            }
-            
-            footer .conteudo .items .logo img {
-                width: 150px;
-            }
-            
-            footer .conteudo .items .item h3 {
-                color: #000;
-                font-size: 1.5em;
-                font-weight: 400;
-                text-transform: uppercase;
-            }
-            
+
             footer .conteudo .items .item .links {
-                display: grid;
-                gap: 20px;
-            }
-            
-            footer .conteudo .items .item .links a {
-                align-items: center;
-                color: #000;
-                display: flex;
-                gap: 10px;
-                text-decoration: none;
+                justify-content: center;
             }
 
             footer .conteudo .items .item .mapa iframe {
-                border: 0;
-                height: 300px;
-                width: 100%;
+                margin-top: 2em;
             }
-            
-            /* Copyright */
-            
-            .copyright {
-                background-color: #000;
-                color: #fff;
-                padding: 2em 1em;
-                text-align: center;
-            }
-            
-            .copyright p {
-                font-weight: 300;
-                margin: 0;
-            }
-            
-            /* Responsivo */
-            
-            @media(max-width: 768px) {
-                
-                .principal {
-                    padding: 4em 1em;
-                }
-                
-                .principal .conteudo {
-                    width: 100%;
-                }
-                
-                .principal .conteudo .titulo img {
-                    display: block;
-                    margin: 0 auto;
-                }
-                
-                .principal .conteudo .titulo h3, .servicos .conteudo .titulo h3, .porque .conteudo .titulo h3, .passo .conteudo .titulo h3, .equipe .conteudo .titulo h3, .avaliacoes .conteudo .titulo h3, .perguntas .conteudo .titulo h3 {
-                    font-size: 2em;
-                    text-align: center;
-                }
-                
-                .principal .conteudo .titulo h3 {
-                    font-size: 1.5em;
-                }
-                
-                .principal .conteudo .titulo p {
-                    font-size: 1em;
-                }
-                
-                .principal .conteudo .botao a {
-                    margin: 0 auto;
-                }
-                
-                .botao a, .principal .conteudo .titulo p, .principal .conteudo .botao p, .principal .conteudo .botao a, .avaliacoes .conteudo .botao a, footer .conteudo .items .item h3 {
-                    text-align: center;
-                }
-                
-                .principal .conteudo .botao {
-                    display: grid;
-                    justify-content: center;
-                }
-                
-                .principal .conteudo .botao img {
-                    margin: 0 auto;
-                    margin-bottom: 1.5em;
-                }
-                
-                .avaliacoes .conteudo .items .swiper .item {
-                    height: 410px;
-                }
-                
-                .servicos .conteudo .items, .porque .conteudo .items, .passo .conteudo .items, .equipe .conteudo .items, footer .conteudo .items {
-                    grid-template-columns: 1fr;
-                }
-                
-                footer .conteudo .items .logo {
-                    display: grid;
-                    justify-content: center;
-                }
-                
-                footer .conteudo .items .item .links {
-                    justify-content: center;
-                }
 
-                footer .conteudo .items .item .mapa iframe {
-                    margin-top: 2em;
-                }
-                
+            .equipe .wrapper .conteudo .titulo h3 {
+                font-size: 2.7rem;
             }
-            
-        </style>
-        
-    </head>
-    <body>
-        
-        <!-- Principal -->
-        <section class="principal">
-            <div class="wrapper">
-                <div class="conteudo">
-                    <div class="titulo">
-                        <img src="imagens/logo.webp">
-                        <h3>Escritório especialista em conflitos Trabalhistas</h3>
-                        <p>Milhares de pessoas passam por situações injustas no ambiente de trabalho, empresas também podem ser surpreendidas por cobranças indevidas e processos mal fundamentados.
-                           <br><br>
-                           Você pode estar sendo prejudicado e é seu direito contestar.
-                           <br><br>
-                           <b>Proteja seus direitos com uma Assessoria Jurídica que  Entende do Assunto</b></p>
-                    </div>
-                    <div class="botao">
-                        <p>Advogado 5 estrelas no Google</p>
-                        <img src="imagens/google.webp">
-                        <a href="https://wa.me/5511995101942">
-                            <i class="bi bi-whatsapp"></i>
-                            Enviar mensagem no Whatsapp
-                        </a>
-                    </div>
+
+            .equipe .conteudo .items .texto p {
+                font-size: 1.1em;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Principal -->
+    <section class="principal">
+        <div class="wrapper">
+            <div class="conteudo">
+                <div class="titulo">
+                    <img src="imagens/logo.webp">
+                    <h3>Escritório especialista em conflitos Trabalhistas</h3>
+                    <p>Atuamos em demandas <b>trabalhistas</b> como <b>verbas rescisórias</b>, <b>rescisão indireta</b>, <b>assédio moral</b>, <b>horas
+                        extras</b> e <b>atrasos salariais</b>, entre outras situações que afetam sua carreira. <br/><br/>
+                        <b>Proteja seus direitos com uma Assessoria Jurídica que Entende do Assunto</b>
+                    </p>
+                </div>
+                <div class="botao">
+                    <p>Advogado 5 estrelas no Google</p>
+                    <img src="imagens/google.webp">
+                    <a href="https://wa.me/5511972382250">
+                        <i class="bi bi-whatsapp"></i>
+                        Enviar mensagem no Whatsapp
+                    </a>
                 </div>
             </div>
-        </section>
-        
-        <!-- Serviços --->
-        <section class="servicos">
-            <div class="wrapper">
-                <div class="conteudo">
-                    <div class="titulo">
-                        <h3>Nossa Missão</h3>
-                        <p>A defesa dos seus direitos trabalhistas</p>
-                    </div>
-                    <div class="items">
-                        <div class="item">
-                            <div class="icone">
-                                <img src="imagens/icone-terno.svg">
-                            </div>
-                            <div class="info">
-                                <h3>Consultoria Trabalhista Preventiva</h3>
-                                <p>Você colaborador que foi dispensado recentemente ou que está se sentindo prejudicado no seu trabalho. Podemos ajudar a esclarecer os seus direitos.</p>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="icone">
-                                <img src="imagens/icone-estabilidade.svg">
-                            </div>
-                            <div class="info">
-                                <h3>Reclamatórias Trabalhistas</h3>
-                                <p>Somos especialistas em reclamações trabalhistas, na defesa de seus direitos.</p>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="icone">
-                                <img src="imagens/calculadora.svg">
-                            </div>
-                            <div class="info">
-                                <h3>Cálculos e Análises Técnicas</h3>
-                                <p>A análise detalhada das verbas rescisórias, horas extras, adicionais de periculosidade, insalubridade e acúmulos de funções.</p>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="icone">
-                                <img src="imagens/trabalho.svg">
-                            </div>
-                            <div class="info">
-                                <h3>Audiências e Mediação</h3>
-                                <p>Representação em audiências iniciais, de instrução e em tentativas de conciliação com postura técnica e firme.</p>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="icone">
-                                <img src="imagens/auditoria.svg">
-                            </div>
-                            <div class="info">
-                                <h3>Auditoria e Compliance Trabalhista</h3>
-                                <p>Mapeamento de riscos e adequação das práticas empresariais à legislação vigente.</p>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="icone">
-                                <img src="imagens/icone-rescisao.svg">
-                            </div>
-                            <div class="info">
-                                <h3>Recursos e Acompanhamento Processual</h3>
-                                <p>Atuação em instâncias superiores e monitoramento constante de prazos, decisões e oportunidades jurídicas.</p>
-                            </div>
-                        </div>
-                    </div>
+        </div>
+    </section>
+
+    <!-- Serviços --->
+    <section class="servicos">
+        <div class="wrapper">
+            <div class="conteudo">
+                <div class="titulo">
+                    <h3>Nossa Missão</h3>
+                    <p>A defesa dos seus direitos trabalhistas</p>
                 </div>
-            </div>
-        </section>
-        
-        <!-- Porque -->
-        <section class="porque">
-            <div class="wrapper">
-                <div class="conteudo">
-                    <div class="titulo">
-                        <h3>Porquê solicitar nossos serviços</h3>
-                    </div>
-                    <div class="items">
-                        <div class="item">
-                            <div class="info">
-                                <h3>
-                                    <div class="icone">
-                                        <i class="bi bi-check2-square"></i>
-                                    </div>
-                                    Comunicação Clara e Acessível
-                                </h3>
-                            </div>
+                <div class="items">
+                    <div class="item">
+                        <div class="icone">
+                            <img src="imagens/icone-estabilidade.svg">
                         </div>
-                        <div class="item">
-                            <div class="info">
-                                <h3>
-                                    <div class="icone">
-                                        <i class="bi bi-person-up"></i>
-                                    </div>
-                                    Atendimento Humanizado e Suporte Contínuo
-                                </h3>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="info">
-                                <h3>
-                                    <div class="icone">
-                                        <i class="bi bi-graph-up-arrow"></i>
-                                    </div>
-                                    Especialização em Direito do Trabalho
-                                </h3>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="info">
-                                <h3>
-                                    <div class="icone">
-                                        <i class="bi bi-graph-up-arrow"></i>
-                                    </div>
-                                    Acompanhamento individualizado
-                                </h3>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="info">
-                                <h3>
-                                    <div class="icone">
-                                        <i class="bi bi-graph-up-arrow"></i>
-                                    </div>
-                                    Transparência em cada etapa
-                                </h3>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="info">
-                                <h3>
-                                    <div class="icone">
-                                        <i class="bi bi-graph-up-arrow"></i>
-                                    </div>
-                                    Consultoria preventiva para empresas
-                                </h3>
-                            </div>
+                        <div class="info">
+                            <h3>Reclamações Trabalhistas</h3>
+                            <p>Advogados trabalhistas defendem seus direitos em casos de demissão por justa causa
+                                indevida, rescisão indireta, assédio moral, equiparação salarial, atrasos de pagamento e
+                                outras irregularidades no trabalho.</p>
                         </div>
                     </div>
-                    <div class="botao">
-                        <a href="https://wa.me/5511995101942">
-                            <i class="bi bi-whatsapp"></i>
-                            Enviar mensagem no Whatsapp
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Passo a Passo -->
-        <section class="passo">
-            <div class="wrapper">
-                <div class="conteudo">
-                    <div class="titulo">
-                        <h3>Etapas do Processo Trabalhista</h3>
-                    </div>
-                    <div class="items">
-                        <div class="item">
-                            <div class="numero">
-                                <span>1</span>
-                            </div>
-                            <div class="texto">
-                                <span>passo</span>
-                                <h3>Análise Prévia e Levantamento de Provas</h3>
-                                <p>O processo inicia-se com a escuta qualificada e o exame minucioso dos fatos, documentos e eventuais provas, a fim de definir a viabilidade jurídica e a estratégia mais adequada.</p>
-                            </div>
+                    <div class="item">
+                        <div class="icone">
+                            <img src="imagens/icone-defesa.png">
                         </div>
-                        <div class="item">
-                            <div class="numero">
-                                <span>2</span>
-                            </div>
-                            <div class="texto">
-                                <span>passo</span>
-                                <h3>Tentativa de Composição</h3>
-                                <p>Antes da judicialização, busca-se a solução consensual por meio de negociação ou mediação, com foco na celeridade e redução de riscos processuais.</p>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="numero">
-                                <span>3</span>
-                            </div>
-                            <div class="texto mt">
-                                <span>passo</span>
-                                <h3>Propositura da Ação e Apresentação de Defesa</h3>
-                                <p>Na ausência de acordo, formaliza-se a demanda judicial. A parte autora apresenta suas alegações iniciais, enquanto a parte demandada exerce seu direito à ampla defesa, instruída com provas documentais e testemunhais.</p>
-                            </div>
+                        <div class="info">
+                            <h3>Defesa dos Direitos Trabalhistas</h3>
+                            <p>Se você foi demitido ou está enfrentando situações injustas no trabalho, nossa equipe
+                                está preparada para esclarecer seus direitos e oferecer o suporte jurídico necessário.
+                            </p>
                         </div>
                     </div>
-                    <div class="items">
-                        <div class="item">
-                            <div class="numero">
-                                <span>4</span>
-                            </div>
-                            <div class="texto">
-                                <span>passo</span>
-                                <h3>Instrução Processual e Produção de Provas</h3>
-                                <p>Durante a fase instrutória, o juízo conduz a coleta de elementos probatórios — depoimentos, perícias e documentos — que fundamentarão o julgamento.</p>
-                            </div>
+                    <div class="item">
+                        <div class="icone">
+                            <img src="imagens/calculadora.svg">
                         </div>
-                        <div class="item">
-                            <div class="numero">
-                                <span>5</span>
-                            </div>
-                            <div class="texto">
-                                <span>passo</span>
-                                <h3>Prolação da Sentença</h3>
-                                <p>Concluída a instrução, o magistrado profere decisão com base na legislação, jurisprudência e no conjunto probatório constante nos autos.</p>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="numero">
-                                <span>6</span>
-                            </div>
-                            <div class="texto mt">
-                                <span>passo</span>
-                                <h3>Instâncias Recursais</h3>
-                                <p>Caso haja inconformismo com o desfecho, é facultado às partes o manejo de recursos aos tribunais superiores, conforme as garantias do devido processo legal.</p>
-                            </div>
+                        <div class="info">
+                            <h3>Cálculos e Análises Técnicas</h3>
+                            <p>A análise detalhada das verbas rescisórias, horas extras, adicionais de periculosidade,
+                                insalubridade e acúmulos de funções.</p>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Equipe -->
-        <div class="equipe">
-            <div class="wrapper">
-                <div class="conteudo">
-                    <div class="titulo">
-                        <h3>Quem Somos</h3>
+                    <div class="item">
+                        <div class="icone">
+                            <img src="imagens/trabalho.svg">
+                        </div>
+                        <div class="info">
+                            <h3>Audiências e Mediação</h3>
+                            <p>Representação em audiências iniciais, de instrução e em tentativas de conciliação com
+                                postura técnica e firme.</p>
+                        </div>
                     </div>
-                    <div class="items">
-                        <div class="texto">
-                            <p>Nosso escritório atua com firmeza na defesa dos direitos trabalhistas, representando em ações contra práticas abusivas, demissões irregulares, verbas não pagas e demais violações da legislação.
-                               <br><br>
-                               Cada caso é tratado com atenção estratégica, respeito à história do trabalhador e da empresa, com foco total em garantir que a justiça seja feita. Atuamos para recuperar valores devidos e assegurar um processo justo e transparente do início ao fim.</p>
-                            <div class="botao">
-                                <a href="https://wa.me/5511995101942">
-                                    <i class="bi bi-whatsapp"></i>
-                                    Enviar mensagem no Whatsapp
-                                </a>
-                            </div>
+                    <div class="item">
+                        <div class="icone">
+                            <img src="imagens/auditoria.svg">
+                        </div>
+                        <div class="info">
+                            <h3>Auditoria e Compliance Trabalhista</h3>
+                            <p>Mapeamento de riscos e adequação das práticas empresariais à legislação vigente.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="icone">
+                            <img src="imagens/icone-rescisao.svg">
+                        </div>
+                        <div class="info">
+                            <h3>Recursos e Acompanhamento Processual</h3>
+                            <p>Atuação em instâncias superiores e monitoramento constante de prazos, decisões e
+                                oportunidades jurídicas.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        
-        <!-- Avaliações -->
-        <div class="avaliacoes">
-            <div class="wrapper">
-                <div class="conteudo">
-                    <div class="titulo">
-                        <h3>Depoimentos de Clientes</h3>
+    </section>
+
+    <!-- Porque -->
+    <section class="porque">
+        <div class="wrapper">
+            <div class="conteudo">
+                <div class="titulo">
+                    <h3>Porquê solicitar nossos serviços</h3>
+                </div>
+                <div class="items">
+                    <div class="item">
+                        <div class="info">
+                            <h3>
+                                <div class="icone">
+                                    <i class="bi bi-check2-square"></i>
+                                </div>
+                                Comunicação Clara e Acessível
+                            </h3>
+                        </div>
                     </div>
-                    <div class="items">
-                        <div class="swiper">
-                          <!-- Additional required wrapper -->
-                          <div class="swiper-wrapper">
+                    <div class="item">
+                        <div class="info">
+                            <h3>
+                                <div class="icone">
+                                    <i class="bi bi-person-up"></i>
+                                </div>
+                                Atendimento Humanizado e Suporte Contínuo
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="info">
+                            <h3>
+                                <div class="icone">
+                                    <i class="bi bi-graph-up-arrow"></i>
+                                </div>
+                                Especialização em Direito do Trabalho
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="info">
+                            <h3>
+                                <div class="icone">
+                                    <i class="bi bi-graph-up-arrow"></i>
+                                </div>
+                                Acompanhamento individualizado
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="info">
+                            <h3>
+                                <div class="icone">
+                                    <i class="bi bi-graph-up-arrow"></i>
+                                </div>
+                                Transparência em cada etapa
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="info">
+                            <h3>
+                                <div class="icone">
+                                    <i class="bi bi-graph-up-arrow"></i>
+                                </div>
+                                Consultoria preventiva para empresas
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="botao">
+                    <a href="https://wa.me/5511972382250">
+                        <i class="bi bi-whatsapp"></i>
+                        Enviar mensagem no Whatsapp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Passo a Passo -->
+    <section class="passo">
+        <div class="wrapper">
+            <div class="conteudo">
+                <div class="titulo">
+                    <h3>Etapas do Processo Trabalhista</h3>
+                </div>
+                <div class="items">
+                    <div class="item">
+                        <div class="numero">
+                            <span>1</span>
+                        </div>
+                        <div class="texto">
+                            <span>passo</span>
+                            <h3>Análise Prévia e Levantamento de Provas</h3>
+                            <p>O processo inicia-se com a escuta qualificada e o exame minucioso dos fatos, documentos e
+                                eventuais provas, a fim de definir a viabilidade jurídica e a estratégia mais adequada.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="numero">
+                            <span>2</span>
+                        </div>
+                        <div class="texto">
+                            <span>passo</span>
+                            <h3>Tentativa de Composição</h3>
+                            <p>Antes da judicialização, busca-se a solução consensual por meio de negociação ou
+                                mediação, com foco na celeridade e redução de riscos processuais.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="numero">
+                            <span>3</span>
+                        </div>
+                        <div class="texto mt">
+                            <span>passo</span>
+                            <h3>Propositura da Ação e Apresentação de Defesa</h3>
+                            <p>Na ausência de acordo, formaliza-se a demanda judicial. A parte autora apresenta suas
+                                alegações iniciais, enquanto a parte demandada exerce seu direito à ampla defesa,
+                                instruída com provas documentais e testemunhais.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="item">
+                        <div class="numero">
+                            <span>4</span>
+                        </div>
+                        <div class="texto">
+                            <span>passo</span>
+                            <h3>Instrução Processual e Produção de Provas</h3>
+                            <p>Durante a fase instrutória, o juízo conduz a coleta de elementos probatórios —
+                                depoimentos, perícias e documentos — que fundamentarão o julgamento.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="numero">
+                            <span>5</span>
+                        </div>
+                        <div class="texto">
+                            <span>passo</span>
+                            <h3>Prolação da Sentença</h3>
+                            <p>Concluída a instrução, o magistrado profere decisão com base na legislação,
+                                jurisprudência e no conjunto probatório constante nos autos.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="numero">
+                            <span>6</span>
+                        </div>
+                        <div class="texto mt">
+                            <span>passo</span>
+                            <h3>Instâncias Recursais</h3>
+                            <p>Caso haja inconformismo com o desfecho, é facultado às partes o manejo de recursos aos
+                                tribunais superiores, conforme as garantias do devido processo legal.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Equipe -->
+    <div class="equipe">
+        <div class="wrapper">
+            <div class="conteudo">
+                <div class="titulo">
+                    <h3>Quem Somos</h3>
+                </div>
+                <div class="items">
+                    <div class="texto">
+                        <p>Nosso escritório atua com firmeza na defesa dos direitos trabalhistas, representando em ações
+                            contra práticas abusivas, demissões irregulares, verbas não pagas e demais violações da
+                            legislação.
+                            <br><br>
+                            Cada caso é tratado com atenção estratégica, respeito à história do trabalhador e da
+                            empresa, com foco total em garantir que a justiça seja feita. Atuamos para recuperar valores
+                            devidos e assegurar um processo justo e transparente do início ao fim.
+                        </p>
+                        <div class="botao">
+                            <a href="https://wa.me/5511972382250">
+                                <i class="bi bi-whatsapp"></i>
+                                Enviar mensagem no Whatsapp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Avaliações -->
+    <div class="avaliacoes">
+        <div class="wrapper">
+            <div class="conteudo">
+                <div class="titulo">
+                    <h3>Depoimentos de Clientes</h3>
+                </div>
+                <div class="items">
+                    <div class="swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
                             <!-- Slides -->
                             <div class="swiper-slide">
                                 <div class="item">
@@ -890,7 +947,9 @@
                                             <i class="bi bi-star-fill"></i>
                                             <i class="bi bi-star-fill"></i>
                                         </div>
-                                        <p>"Eu achava que estava tudo certo na minha rescisão, mas depois da análise, descobri que tinha valores a receber. O atendimento foi claro e me senti seguro durante todo o processo."</p>
+                                        <p>"Eu achava que estava tudo certo na minha rescisão, mas depois da análise,
+                                            descobri que tinha valores a receber. O atendimento foi claro e me senti
+                                            seguro durante todo o processo."</p>
                                     </div>
                                 </div>
                             </div>
@@ -908,7 +967,9 @@
                                             <i class="bi bi-star-fill"></i>
                                             <i class="bi bi-star-fill"></i>
                                         </div>
-                                        <p>"Fui orientada em cada etapa e tudo aconteceu com muita transparência. Recebi o que era meu por direito e ainda evitamos um desgaste maior. Recomendo sem pensar duas vezes."</p>
+                                        <p>"Fui orientada em cada etapa e tudo aconteceu com muita transparência. Recebi
+                                            o que era meu por direito e ainda evitamos um desgaste maior. Recomendo sem
+                                            pensar duas vezes."</p>
                                     </div>
                                 </div>
                             </div>
@@ -926,177 +987,184 @@
                                             <i class="bi bi-star-fill"></i>
                                             <i class="bi bi-star-fill"></i>
                                         </div>
-                                        <p>"Eu estava sendo cobrado por algo que nem fazia parte da minha responsabilidade. Com o suporte jurídico certo, conseguimos resolver o problema rapidamente e evitar prejuízos."</p>
+                                        <p>"Eu estava sendo cobrado por algo que nem fazia parte da minha
+                                            responsabilidade. Com o suporte jurídico certo, conseguimos resolver o
+                                            problema rapidamente e evitar prejuízos."</p>
                                     </div>
                                 </div>
                             </div>
-                          </div>
-                          <!-- If we need pagination -->
-                          <!--<div class="swiper-pagination"></div>-->
-                        
-                          <!-- If we need navigation buttons -->
-                          <div class="swiper-button-prev"></div>
-                          <div class="swiper-button-next"></div>
+                        </div>
+                        <!-- If we need pagination -->
+                        <!--<div class="swiper-pagination"></div>-->
+
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Perguntas Frequentes -->
+    <div class="perguntas">
+        <div class="wrapper">
+            <div class="conteudo">
+                <div class="titulo">
+                    <h3>Perguntas Frequentes</h3>
+                </div>
+                <div class="items">
+                    <div class="item">
+                        <div class="pergunta">
+                            <h3>Qual é o custo dos serviços oferecidos?</h3>
+                            <i class="bi bi-plus-lg"></i>
+                        </div>
+                        <div class="resposta">
+                            <p>Oferecemos condições personalizadas, de acordo com a complexidade do caso.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="pergunta">
+                            <h3>É necessário agendar a consulta?</h3>
+                            <i class="bi bi-plus-lg"></i>
+                        </div>
+                        <div class="resposta">
+                            <p>Sim, para garantir um atendimento dedicado e personalizado.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="pergunta">
+                            <h3>Vocês atendem casos trabalhistas em outras cidades?</h3>
+                            <i class="bi bi-plus-lg"></i>
+                        </div>
+                        <div class="resposta">
+                            <p>Sim, realizamos atendimentos presenciais e online para todo o Brasil.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="pergunta">
+                            <h3>Como posso acompanhar o andamento do meu caso?</h3>
+                            <i class="bi bi-plus-lg"></i>
+                        </div>
+                        <div class="resposta">
+                            <p>Mantemos uma comunicação transparente com atualizações regulares sobre o status do seu
+                                processo.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        
-        <!-- Perguntas Frequentes -->
-        <div class="perguntas">
-            <div class="wrapper">
-                <div class="conteudo">
-                    <div class="titulo">
-                        <h3>Perguntas Frequentes</h3>
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="wrapper">
+            <div class="conteudo">
+                <div class="items">
+                    <div class="item">
+                        <h3>Contato</h3>
+                        <div class="links">
+                            <a href="javascript:void(0);">
+                                <i class="bi bi-clock"></i>
+                                09:00 às 18:00
+                            </a>
+                            <a href="https://wa.me/5511972382250">
+                                <i class="bi bi-whatsapp"></i> (11) 97238-2250
+                            </a>
+                            <a href="mailto:debora@pessoto.com.br">
+                                <i class="bi bi-envelope"></i>
+                                debora@pessoto.com.br
+                            </a>
+                            <a href="https://instagram.com/pessotoealmeidaadvogados/">
+                                <i class="bi bi-instagram"></i>
+                                @pessotoealmeidaadvogados
+                            </a>
+                            <a href="javascript:void(0);">
+                                <i class="bi bi-geo-alt-fill"></i>
+                                Rua Apucarana 272, Sala 711, Tatuapé - São Paulo
+                            </a>
+                        </div>
                     </div>
-                    <div class="items">
-                        <div class="item">
-                            <div class="pergunta">
-                                <h3>Qual é o custo dos serviços oferecidos?</h3>
-                                <i class="bi bi-plus-lg"></i>
-                            </div>
-                            <div class="resposta">
-                                <p>Oferecemos condições personalizadas, de acordo com a complexidade do caso.</p>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="pergunta">
-                                <h3>É necessário agendar a consulta?</h3>
-                                <i class="bi bi-plus-lg"></i>
-                            </div>
-                            <div class="resposta">
-                                <p>Sim, para garantir um atendimento dedicado e personalizado.</p>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="pergunta">
-                                <h3>Vocês atendem casos trabalhistas em outras cidades?</h3>
-                                <i class="bi bi-plus-lg"></i>
-                            </div>
-                            <div class="resposta">
-                                <p>Sim, realizamos atendimentos presenciais e online para todo o Brasil.</p>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="pergunta">
-                                <h3>Como posso acompanhar o andamento do meu caso?</h3>
-                                <i class="bi bi-plus-lg"></i>
-                            </div>
-                            <div class="resposta">
-                                <p>Mantemos uma comunicação transparente com atualizações regulares sobre o status do seu processo.</p>
-                            </div>
+                    <div class="item">
+                        <div class="mapa">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.7696907047543!2d-46.56763542425426!3d-23.54078456083734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5eed9d46a20f%3A0x1a2b5398c38d1e6c!2sR.%20Apucarana%2C%20272%20-%20Tatuap%C3%A9%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2003311-000!5e0!3m2!1spt-BR!2sbr!4v1753303699387!5m2!1spt-BR!2sbr"
+                                style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        
-        <!-- Rodapé -->
-        <footer>
-            <div class="wrapper">
-                <div class="conteudo">
-                    <div class="items">
-                        <div class="item">
-                            <h3>Contato</h3>
-                            <div class="links">
-                                <a href="javascript:void(0);">
-                                    <i class="bi bi-clock"></i>
-                                    09:00 às 18:00
-                                </a>
-                                <a href="https://wa.me/5511995101942">
-                                    <i class="bi bi-whatsapp"></i> (11) 98268-8585
-                                </a>
-                                <a href="mailto:debora@pessoto.com.br">
-                                    <i class="bi bi-envelope"></i> 
-                                    debora@pessoto.com.br
-                                </a>
-                                <a href="https://instagram.com/pessotoealmeidaadvogados/">
-                                    <i class="bi bi-instagram"></i>
-                                    @pessotoealmeidaadvogados
-                                </a>
-                                <a href="javascript:void(0);">
-                                    <i class="bi bi-geo-alt-fill"></i>
-                                    Rua Apucarana 272, Sala 711, Tatuapé - São Paulo
-                                </a>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="mapa">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.7696907047543!2d-46.56763542425426!3d-23.54078456083734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5eed9d46a20f%3A0x1a2b5398c38d1e6c!2sR.%20Apucarana%2C%20272%20-%20Tatuap%C3%A9%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2003311-000!5e0!3m2!1spt-BR!2sbr!4v1753303699387!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        
-        <!-- Copyright -->
-        <section class="copyright">
-            <p>Copyrigth Pessoto e Almeida Advogados – 2025 © Todos os direitos reservados.</p>
-        </section>
-        
-        <!-- jQuery -->
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        
-        <!-- Swiper JS -->
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-        
-        <!-- Scripts -->
-        <script>
-            
-            const swiper = new Swiper('.swiper', {
-              // Optional parameters
-              direction: 'horizontal',
-              loop: true,
-              autoplay: {
+    </footer>
+
+    <!-- Copyright -->
+    <section class="copyright">
+        <p>Copyrigth Pessoto e Almeida Advogados – 2025 © Todos os direitos reservados.</p>
+    </section>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Scripts -->
+    <script>
+
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+            autoplay: {
                 delay: 5000,
-              },
-              breakpoints: {
-                  1: {
+            },
+            breakpoints: {
+                1: {
                     slidesPerView: 1,
-                    spaceBetween: 20, 
-                  },
-                  768: {
+                    spaceBetween: 20,
+                },
+                768: {
                     slidesPerView: 3,
-                    spaceBetween: 20, 
-                  }
-              },
-              // If we need pagination
-              pagination: {
+                    spaceBetween: 20,
+                }
+            },
+            // If we need pagination
+            pagination: {
                 el: '.swiper-pagination',
-              },
-            
-              // Navigation arrows
-              navigation: {
+            },
+
+            // Navigation arrows
+            navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
-              },
-            });
-            
-            // Perguntas
-            $(".pergunta").click(function() {
-                
-                // Se está fechado
-                if(!$(this).parent().hasClass("aberto")) {
-                    
-                    $(this).parent().addClass("aberto");
-                    $(this).children("i").removeClass("bi-plus-lg");
-                    $(this).children("i").addClass("bi-dash-lg");
-                    
-                }
-                
-                else if($(this).parent().hasClass("aberto")) {
-                    
-                    $(this).parent().removeClass("aberto");
-                    $(this).children("i").removeClass("bi-dash-lg");
-                    $(this).children("i").addClass("bi-plus-lg");
-                    
-                }
-                
-            });
-            
-        </script>
-        
-    </body>
+            },
+        });
+
+        // Perguntas
+        $(".pergunta").click(function () {
+
+            // Se está fechado
+            if (!$(this).parent().hasClass("aberto")) {
+
+                $(this).parent().addClass("aberto");
+                $(this).children("i").removeClass("bi-plus-lg");
+                $(this).children("i").addClass("bi-dash-lg");
+
+            }
+
+            else if ($(this).parent().hasClass("aberto")) {
+
+                $(this).parent().removeClass("aberto");
+                $(this).children("i").removeClass("bi-dash-lg");
+                $(this).children("i").addClass("bi-plus-lg");
+
+            }
+
+        });
+
+    </script>
+
+</body>
+
 </html>
